@@ -1,0 +1,14 @@
+input_file: /tmp/samples/v1.mp4
+triton:
+  server:
+    host: '127.0.0.1'
+    port: '8001'
+    verbose: False
+    shm_region_type: 'system' # 'cuda' or 'system'
+  model:
+    name: 'trafficcamnet'
+    version: '1'
+    batch_size: 1
+    precision: 'FP32'
+    conf_threshold: 0.5
+    iou_threshold: 0.5
