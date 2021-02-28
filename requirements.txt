@@ -1,3 +1,0 @@
-pyyaml
-future
-opencv-python

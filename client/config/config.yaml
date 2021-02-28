@@ -1,7 +1,7 @@
-input_file: /tmp/samples/v1.mp4
+input_file: /app/samples/v1.mp4
 triton:
   server:
-    host: '127.0.0.1'
+    host: 'server'
     port: '8001'
     verbose: False
     shm_region_type: 'system' # 'cuda' or 'system'

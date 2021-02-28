@@ -1,0 +1,26 @@
+name: "trafficcamnet"
+platform: "tensorrt_plan"
+max_batch_size: 1
+input {
+  name: "input_1"
+  data_type: TYPE_FP32
+  dims: 3
+  dims: 544
+  dims: 960
+}
+output {
+  name: "output_bbox/BiasAdd"
+  data_type: TYPE_FP32
+  dims: 16
+  dims: 34
+  dims: 60
+}
+output {
+  name: "output_cov/Sigmoid"
+  data_type: TYPE_FP32
+  dims: 4
+  dims: 34
+  dims: 60
+}
+default_model_filename: "model.plan"
+
